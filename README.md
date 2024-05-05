@@ -48,3 +48,13 @@ on the target machine.
 ```shell
     docker-compose -f docker-compose.precompiled.yml up
 ```
+
+### Console Log
+
+```shell
+Attaching to app-1
+app-1  | Hello, world!
+app-1  | Change this string to trigger recompilation instead of using Docker cache layers
+app-1  | 2024-05-05 04:22:20.433801466 UTC
+app-1 exited with code 0
+```
