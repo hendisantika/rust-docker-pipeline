@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./data:/tmp
+    environment:
+      COMPOSE_CONVERT_WINDOWS_PATHS: 1
